@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+<title>App Stack</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+    <div id="spacer"></div>
+    <div id="home" data-bind="page: {
+            id:'start', 
+            title: 'Home',
+            fx: 'fade',
+            source: 'views/home.html'
+        }" >
+    </div>
+    
+    <div data-bind="page: {
+            id:'about', 
+            title: 'About',
+            fx: 'fade',
+            source: 'views/about.html'
+        }" >
+    </div>
+    
+    <script type="text/html" id="dropdown">
+        <ul class="uk-nav">
+            <li><a href="#!/start"><i class="uk-icon-home"></i> Home</a></li>
+            <li><a href="#!/about"><i class="uk-icon-question-circle"></i> About</a></li>
+        </ul>
+    </script>
+
+    <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
